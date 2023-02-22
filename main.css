@@ -1,0 +1,195 @@
+S* { /*realizando o reset da página*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+section h2,
+section h3,
+form button {
+    font-family: 'Anton', sans-serif; /*adicionando a fonte Anton do site Google Fonts. Esse código é possível ser copiado direto do site*/
+    font-weight: normal; /*ajuste no "peso da fonte"*/
+}
+
+body,
+input,
+textarea {
+    font-family: 'Acme', sans-serif; /*adicionando a fonte  do site Google Fonts. Esse código é possível ser copiado direto do site*/
+    font-weight: normal;
+}
+
+header { /*ajustando com cabeçalho e colocando cores nele*/
+    padding: 16px;
+    margin-bottom: 16px;
+    background-color: #dd6300;
+    color: white;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+body {
+    background-color: rgb(236, 227, 219);
+}
+
+header nav li { /*estilizar o menu, colocando um do lado do outro*/
+    display: inline; /*inline deixa um do lado do outro horizontamente*/
+    margin-left: 18px; /*acrescenta uma margem à esquerda*/
+    font-size: 20px; /*aumentar o tamanho da fonte*/
+}
+
+header nav li a { /*para mudar a cor do menu é precisar acrescentar no a*/
+    color: white;
+    text-decoration: none; /*remover o underline dos links*/
+}
+
+.container { /*estilizando o container*/
+    max-width: 1280px; /*largura máxima*/
+    width: 100%; /*a combinação do max-width e o width diz que vai ocupar 100% da largura até chegar em 1280px. Passou disso, ele fica centralizado na tela*/
+    margin: 0 auto; /*para centralizar*/
+}
+
+header .container,
+section .container { /*aproveitando o mesmo código para acrescentar mais um elemento à configuração, no caso, section .container*/
+    display: flex; /*deixa o menu lado a lado com o <h1>*/
+    align-items: center; /*centralizar na vertical*/
+    justify-content: space-between; /*leva o item, no caso o menu, para a extrema direita da página*/
+}
+
+#games h2,
+#games p {
+    margin-left: 0px;
+}
+
+.list img{ /*ajuste da classe das imagens*/
+    height: 150px; /*ajuste do tamanho das imagens para deixar padronizado*/
+    width: 22%;
+}
+
+.cover { /*ajuste da classe das imagens*/
+    height: 300px; /*ajuste do tamanho das imagens para deixar padronizado*/
+    width: 50%;
+}
+
+.cover2 {
+    height: 325px;
+    width: 45%;
+}
+
+.list li {
+    display: inline; /*inline deixa um do lado do outro horizontamente*/
+    margin-right: 10px; /*adicionando uma margem à direita */
+}
+
+section .container {
+    align-items: flex-start; /*ajusta a seção para a direita começando pelo topo */
+}                           /*aqui também ocorre o efeito cascata, subescrevendo uma regra do align-items que estava como center logo acima*/
+
+section h2 {
+    padding: 24px 0; /*cria espaçamento para a seção de 24px (superior e inferior) e nas laterais sendo zero*/
+    color: #ff7809
+}
+
+section h2 { /*no título da seção*/
+    margin-bottom: 16px; /*margem para baixo*/
+}
+
+section p {
+    margin-bottom: 16px;
+}
+
+.cover {
+    margin-right: 20px;
+}
+
+.cover2 {
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.social-links img { /*ajuste da classe das imagens das redes sociais*/
+    height: 30px; /*ajuste do tamanho das imagens das redes sociais para deixar padronizado*/
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.social-links li a {
+    text-decoration: none; /*remover o efeito que o "a" dá para os itens*/
+}
+
+#contact .container {
+    display: block /*O elemento gera uma caixa de elemento de bloco, gerando quebras de linha antes e depois do elemento quando no fluxo normal*/
+}
+
+.contact-methods {
+    display: flex; /*deixa lado a lado*/
+    justify-content: space-between; /*Dá um espaçamento igualitário entre as seções*/
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 350px;
+    margin-bottom: 6px;
+    padding: 10px;
+}
+
+form textarea { /*desabilita a possibilidade de manipular o tamanho da caixa de texto do item "Sua mensagem"*/
+    resize: none;
+    height: 150px;
+    width: 352px;
+}
+
+
+form button {
+    background-color: #ff7809;
+    color: white;
+    border: none; /*remove bordas*/
+    cursor:pointer; /*adiciona a mãozinha ao passar o mouse pelo botão, dando a informação ao usuário que é algo clicável*/
+    width: 100%;
+}
+
+
+form button:hover { /*quando o usuário passar o mouse por cima do botão ele muda de cor*/
+    background-color: #ff7809;
+}
+
+input:focus, textarea:focus { /*o "focus" corresponde a quando selecionamos o form, dando foco a ele e alterando a cor das bordas do form*/
+    outline-color: #ff7809; /*acrescenta uma nova cor à borda quando o form está clicado (em foco) */
+}
+
+section h3 {
+    margin-bottom: 16px;
+}
+
+.contact-methods a {
+    color: black
+}
+
+.dev img {
+    height: 70px; /*ajuste do tamanho das imagens das redes sociais para deixar padronizado*/
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+footer {
+    background-color: #ff7809;
+    color: white;
+    display: flex;
+    justify-content: left;
+    list-style: none;
+    padding: 16px 0;
+}
