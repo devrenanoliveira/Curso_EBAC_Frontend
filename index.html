@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML com JS</title>
+    <link rel="stylesheet" href="./main.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Exercício JS (verificador de números)</h1>
+        <br></br>
+        <h2>Utilize os campos abaixo para ver se um número é maior que outro:</h2>
+        <form id="form-verify"> <!--crianmos esse ID-->
+            <input type="number" id = "campoA" required placeholder="Digite seu número aqui (Campo A)" />
+            <input type="number" id = "campoB" required placeholder="Digite seu número aqui (Campo B)" />
+            <button id = "verify" type="submit">Verificar</button>
+            <button id = "erase" type="reset">Resetar</button>
+            <p class="success-message">O campo B é maior que o campo A</p>
+            <p class="error-message">O campo B deve ser maior que o campo A</p>
+        </form>
+    </div>
+    <script src="./main.js"></script> <!--acrescentamos o JS aqui, para não danificar todo o código HTML, caso algo saia errado-->
+    <footer>
+        <p>
+            Se o campo B for maior que o campo A, o resultado será positivo.
+        </p>
+    </footer>
+</body>
+</html>

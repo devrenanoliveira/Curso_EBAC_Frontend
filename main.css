@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(226, 240, 199);
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin: 80px auto;
+    max-width: 640px;
+    width: 100%;
+}
+
+#campoA {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#campoB {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#campoA:focus, #campoB:focus {
+    border: 5px solid rgb(199, 228, 213);
+}
+
+#campoA:hover, #campoB:hover {
+    border: 5px solid rgb(199, 228, 213);
+}
+
+form {
+    margin-top: 40px;
+}
+
+input, button {
+    display: block;
+    padding: 8px;
+    margin-bottom: 8px;
+    width: 100%;
+    resize: none;
+}
+
+#verify {
+    background-color: #4eb97b;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    font-style: italic;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#erase {
+    background-color: rgb(248, 106, 106);
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    font-style: italic;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#verify:hover {
+    background-color: rgb(7, 118, 66);
+}
+
+#erase:hover {
+    background-color: red;
+}
+
+.success-message {
+    background-color: #27ae60;
+    padding: 16px;
+    color: white;
+    display: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.error-message {
+    padding: 8px;
+    background-color: red;
+    padding: 16px;
+    color: white;
+    display: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+input.error {
+    color: red;
+    border-color: red;
+    outline-color: red;
+}
+
+footer {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
