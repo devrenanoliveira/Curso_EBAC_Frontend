@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: rgb(234, 232, 236);
+}
+
+header {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 16px;
+    text-transform: uppercase;
+}
+
+h3 {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    padding: 16px;
+    font-style: oblique;
+}
+
+form {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+input {
+    padding: 10px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+ol {
+    padding: 60px;
+    text-align: justify;
+    cursor: pointer;
+}
+
+ol li {
+    list-style-position: inside;
+    margin: 0 auto;
+    padding: 20px;
+    width: 50%;
+}
+
+
+.riscado {
+    text-decoration: line-through;
+}
+
+#botao-adicionar {
+    background-color: rgb(1, 124, 12);
+    color: white;
+    font-size: bold;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#botao-limpar-tudo{
+    background-color: red;
+    color: white;
+    font-size: bold;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+footer {
+    text-align: center;
+    border-top: 1px solid #ccc;
+    padding: 16px;
+}
+
+#dev {
+    padding: 10px;
+}
+
+#git {
+    padding: 10px;
+}
